@@ -1,0 +1,17 @@
+html
+    head
+        title Book Lists
+        style
+            include main.css
+    body
+        h1.page-title Hello Books
+        ul.book-lists
+            each book in booklist
+                li.list-item
+                    div.book-card 
+                    img.book-img(src=book.thumbnailUrl, alt ="No Image Available")
+                    p=book.title
+                    p=book.authors[0]
+                    p=book.categories[0]
+       
+    
